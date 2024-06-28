@@ -59,10 +59,16 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-
+function isCharAVowel(vowel){
+    if(vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u"){
+        return "True"
+    } else {
+        return "False"
+    }
+}
 
 // -- UNCOMMENT LINE BELOW --
-// console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log('Exercise 3 Result:', isCharAVowel("a"));
 
 /*
 Exercise 4: generateEmail()
@@ -93,8 +99,8 @@ Complete the exercise in the space below:
 */
 
 
-
-console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+// -- UNCOMMENT LINE BELOW --
+// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 /*
 Exercise 6: maxOfThree()
