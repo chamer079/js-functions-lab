@@ -81,10 +81,12 @@ should return 'johnsmith@example.com'.
 
 Complete the exercise in the space below:
 */
-
+function generateEmail(name, domain){
+    return(`${name}@${domain}`)
+}
 
 // -- UNCOMMENT LINE BELOW --
-// console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
 /*
 Exercise 5: greetUser()
