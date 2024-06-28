@@ -99,10 +99,20 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 
 Complete the exercise in the space below:
 */
-
+function greetUser(name, timeOfDay){
+    if(timeOfDay === "morning"){
+        return(`Good morning, ${name}!`)
+    } else if(timeOfDay === "afternoon"){
+        return(`Good afternoon, ${name}`)
+    } else if(timeOfDay === "evening"){
+        return(`Good evening, ${name}`)
+    } else {
+        return(`${timeOfDay} is not a time of day, ${name}.`)
+    }
+}
 
 // -- UNCOMMENT LINE BELOW --
-// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 /*
 Exercise 6: maxOfThree()
