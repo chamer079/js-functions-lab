@@ -37,7 +37,7 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-const isAdult = (age) => {
+function isAdult(age){
     if(age >= 18){
         return "Adult"
     } else {
