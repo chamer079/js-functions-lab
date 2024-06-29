@@ -156,7 +156,7 @@ Complete the exercise in the space below:
 */
 function calculateTip(bill, tipPercantage){
     // console.log(bill, tipPercantage)
-    return(bill * (tipPercantage / 100))   //
+    return(bill * (tipPercantage / 100))   
 }
 
 // -- UNCOMMENT LINE BELOW --
@@ -175,10 +175,18 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
+function convertTemperature(temperature, temperatureScale){
+    console.log(temperature, temperatureScale)
+    // if else statement -  uses === to determin between F and C
+    // includes math formula to convert between F & C
+        // C formula: C = (${temperature} - 32) * 5/9 **this is 5/ninths**
+        // F formula: F = ${temperature} * 9/5 + 32
+        
+}
 
 
 // -- UNCOMMENT LINE BELOW --
-// console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
 /*
 Exercise 9: basicCalculator()
