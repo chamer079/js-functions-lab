@@ -38,6 +38,7 @@ Complete the exercise in the space below:
 */
 
 function isAdult(age){
+    // console.log(age)
     if(age >= 18){
         return "Adult"
     } else {
@@ -60,6 +61,7 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 function isCharAVowel(vowel){
+    // console.log(vowel)
     if(vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u"){
         return "True"
     } else {
@@ -82,6 +84,7 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 function generateEmail(name, domain){
+    // console.log(name, domain)
     return(`${name}@${domain}`)
 }
 
@@ -100,6 +103,7 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 function greetUser(name, timeOfDay){
+    // console.log(name, timeOfDay)
     if(timeOfDay === "morning"){
         return(`Good morning, ${name}!`)
     } else if(timeOfDay === "afternoon"){
@@ -126,6 +130,7 @@ Complete the exercise in the space below:
 */
 
 function maxOfThree(num1, num2, num3){
+    // console.log(num1, num2, num3)
     if(num1 > num2 && num1 > num3){
         return num1
     } else if(num2 > num1 && num2 > num3){
@@ -149,10 +154,13 @@ Example: calculateTip(50, 20) should return 10.
 
 Complete the exercise in the space below:
 */
-
+function calculateTip(bill, tipPercantage){
+    // console.log(bill, tipPercantage)
+    return(bill * (tipPercantage / 100))   //
+}
 
 // -- UNCOMMENT LINE BELOW --
-// console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log('Exercise 7 Result:', calculateTip(50, 20));
 
 /*
 Exercise 8: convertTemperature()
