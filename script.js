@@ -104,11 +104,11 @@ Complete the exercise in the space below:
 */
 function greetUser(name, timeOfDay){
     // console.log(name, timeOfDay)
-    if(timeOfDay === "morning"){
+    if(timeOfDay = "morning"){
         return(`Good morning, ${name}!`)
-    } else if(timeOfDay === "afternoon"){
+    } else if(timeOfDay = "afternoon"){
         return(`Good afternoon, ${name}`)
-    } else if(timeOfDay === "evening"){
+    } else if(timeOfDay = "evening"){
         return(`Good evening, ${name}`)
     } else {
         return(`${timeOfDay} is not a time of day, ${name}.`)
@@ -181,12 +181,17 @@ function convertTemperature(temperature, temperatureScale){
     // includes math formula to convert between F & C
         // C formula: C = (${temperature} - 32) * 5/9 **this is 5/ninths**
         // F formula: F = ${temperature} * 9/5 + 32
-        
+
+        if(temperatureScale === "F"){
+            return(temperature - 32 * 5/9)
+        } else if(temperatureScale === "C"){
+            return(temperature * (9/5) +32)
+        }
 }
 
 
 // -- UNCOMMENT LINE BELOW --
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('Exercise 8 Result:', convertTemperature(32, "F"));
 
 /*
 Exercise 9: basicCalculator()
