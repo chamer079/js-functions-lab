@@ -107,9 +107,11 @@ function greetUser(name, timeOfDay){
     if(timeOfDay = "morning"){
         return(`Good morning, ${name}!`)
     } else if(timeOfDay = "afternoon"){
-        return(`Good afternoon, ${name}`)
+        return(`Good afternoon, ${name}!`)
     } else if(timeOfDay = "evening"){
-        return(`Good evening, ${name}`)
+        return(`Good evening, ${name}!`)
+    } else if(timeOfDay = "night"){
+        return(`Good night, ${name}!`)
     } else {
         return(`${timeOfDay} is not a time of day, ${name}.`)
     }
