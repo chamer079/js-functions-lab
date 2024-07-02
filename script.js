@@ -182,18 +182,18 @@ function convertTemperature(temperature, temperatureScale){
     // if else statement -  uses === to determin between F and C
     // includes math formula to convert between F & C
         // C formula: C = (${temperature} - 32) * 5/9 **this is 5/ninths**
-        // F formula: F = ${temperature} * 9/5 + 32
+        // F formula: F = (${temperature} * 9/5) + 32
 
         if(temperatureScale === "F"){
-            return(temperature - 32 * 5/9)
+            return((temperature - 32) * 5/9)
         } else if(temperatureScale === "C"){
-            return(temperature * (9/5) +32)
+            return((temperature * 9/5) + 32)
         }
 }
 
 
 // -- UNCOMMENT LINE BELOW --
-console.log('Exercise 8 Result:', convertTemperature(32, "F"));
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
 /*
 Exercise 9: basicCalculator()
