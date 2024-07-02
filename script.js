@@ -243,10 +243,23 @@ Example: calculateGrade(100) should return A.
 
 Complete the exercise in the space below:
 */
+function calculateGrade(score){
+    if(score == 100 || score >= 90){
+        return("Your letter grade is an 'A'.")
+    } else if(score === 89 || score >= 80){
+        return("Your letter grade is a 'B'.")
+    } else if(score === 79 || score >= 70){
+        return("Your letter score is a 'C'.")
+    } else if(score === 69 || score >= 60){
+        return("Your letter score is a 'D'.")
+    } else {
+        return("Your letter score is a 'F'.")
+    }
+}
 
 
 // -- UNCOMMENT LINE BELOW --
-// console.log('Exercise 10 Result:', calculateGrade(85));
+console.log('Exercise 10 Result:', calculateGrade(85));
 
 /*
 Exercise 11: createUsername()
