@@ -276,10 +276,17 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
 
 Complete the exercise in the space below:
 */
-
+// use substring() to extract the first 3 characters from both first name & last name
+    // stumbled upon this JS method on MDN..started off with the char() and went down a rabbit hole to this method
+    // substring() - returns the part of a string from the beginning index ( 0 ) up to and/or exluding the last index value in said string
+    
+function createUsername(firstName, lastName, combined){
+    combined = firstName.length + lastName.length
+    return(`${firstName.substring(0,3)}${lastName.substring(0,3)}${combined}`)
+}
 
 // -- UNCOMMENT LINE BELOW --
-// console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
 /*
 Exercise 12: numArgs()
