@@ -280,8 +280,9 @@ Complete the exercise in the space below:
     // stumbled upon this JS method on MDN..started off with the char() and went down a rabbit hole to this method
     // substring() - returns the part of a string from the beginning index ( 0 ) up to and/or exluding the last index value in said string
     
-function createUsername(firstName, lastName, combined){
-    combined = firstName.length + lastName.length
+function createUsername(firstName, lastName){
+    let combined = firstName.length + lastName.length
+    // console.log(combined)
     return(`${firstName.substring(0,3)}${lastName.substring(0,3)}${combined}`)
 }
 
@@ -296,6 +297,9 @@ This function should return the count of arguments passed to it when called.
 
 Complete the exercise in the space below:
 */
+function numArgs(argNum){
+    return(argNum.length)
+}
 
 
 // -- UNCOMMENT LINE BELOW --
