@@ -297,12 +297,12 @@ This function should return the count of arguments passed to it when called.
 
 Complete the exercise in the space below:
 */
-// Googled, "How to find the count of an argument javascript" and scrolled down to the 
+// Googled, "How to find the count of an argument javascript" and scrolled down to the MDN docs for arguments.length
+    // argument.length - provides the number of arguments actually passed to a function
 
 function numArgs(){
     return(arguments.length)
 }
-
 
 // -- UNCOMMENT LINE BELOW --
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
